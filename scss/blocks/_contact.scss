@@ -1,0 +1,33 @@
+
+.contact__list {
+	display: flex;
+	column-gap: 20px;
+	align-items: center;
+}
+
+.contact__img-mail {
+	fill: black;
+	transition: all 0.5s ease-in;
+}
+
+.contact__img-mail:hover {
+	fill: #adadad;
+}
+
+.contact__img-github {
+	fill: #212121;
+	transition: all 0.5s ease-in;
+}
+.contact__img-github:hover {
+	fill: #adadad;
+}
+
+.contact__img-tg {
+	fill: #039BE5;
+	transition: all 0.5s ease-in;
+}
+
+.contact__img-tg:hover {
+	fill: #83b6cf;
+}
+

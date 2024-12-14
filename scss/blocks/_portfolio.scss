@@ -1,0 +1,59 @@
+.portfolio {
+    margin-bottom: 50px;
+
+    @include tablet () {
+            margin-bottom: 40px;
+    }
+}
+
+.portfolio__title {
+    margin-bottom: 30px;
+
+    @include mobile () {
+            font-size: 24px;
+    }
+}
+
+.portfolio__link {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.portfolio__project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.portfolio__the-project {
+    width: 380px;
+
+    @include tablet () {
+        width: 346px;
+    }
+}
+
+.portfolio__the-project h3 {
+    margin-bottom: 5px;
+}
+
+.portfolio__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;    
+    height: 210px;
+    background-color: #F6F6F6;
+}
+
+.portfolio__the-project-technology {
+    color: #6B9DB9;
+}
+
+/*.portfolio__img-laptop {
+    position: relative;
+}*/
+
+.portfolio__img-projekt {
+    position: absolute;
+}
