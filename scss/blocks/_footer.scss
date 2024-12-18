@@ -17,6 +17,12 @@
 
 }
 
+.action__title {
+	@include mobile () {
+			font-size: 22px;
+	}
+}
+
 .footer__text {
 	margin: 0;
 	@include mobile () {

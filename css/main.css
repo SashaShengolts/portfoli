@@ -455,6 +455,12 @@ p + p {
   }
 }
 
+@media (max-width: 767px) {
+  .action__title {
+    font-size: 22px;
+  }
+}
+
 .footer__text {
   margin: 0;
 }
@@ -478,6 +484,7 @@ p + p {
 @media (max-width: 767px) {
   .about-info {
     flex-direction: column;
+    row-gap: 20px;
   }
 }
 

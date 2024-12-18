@@ -1,6 +1,7 @@
 .about-info {
     display: flex;
     column-gap: 30px;
+    
     margin-bottom: 50px;
 
     @include tablet () {
@@ -9,6 +10,7 @@
 
     @include mobile () {
         flex-direction: column;
+        row-gap: 20px;
     }
 }
 
