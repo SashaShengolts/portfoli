@@ -5,9 +5,16 @@
 	align-items: center;
 }
 
+.contact__link {
+	width: 42px;
+	height: 42px;
+}
+
 .contact__img-mail {
+	display: block;
 	fill: black;
 	transition: all 0.5s ease-in;
+	flex-shrink: 0;
 }
 
 .contact__img-mail:hover {
@@ -15,16 +22,20 @@
 }
 
 .contact__img-github {
+	display: block;
 	fill: #212121;
 	transition: all 0.5s ease-in;
+	flex-shrink: 0;
 }
 .contact__img-github:hover {
 	fill: #adadad;
 }
 
 .contact__img-tg {
+	display: block;
 	fill: #039BE5;
 	transition: all 0.5s ease-in;
+	flex-shrink: 0;
 }
 
 .contact__img-tg:hover {

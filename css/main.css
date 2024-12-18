@@ -363,9 +363,16 @@ p + p {
   align-items: center;
 }
 
+.contact__link {
+  width: 42px;
+  height: 42px;
+}
+
 .contact__img-mail {
+  display: block;
   fill: black;
   transition: all 0.5s ease-in;
+  flex-shrink: 0;
 }
 
 .contact__img-mail:hover {
@@ -373,8 +380,10 @@ p + p {
 }
 
 .contact__img-github {
+  display: block;
   fill: #212121;
   transition: all 0.5s ease-in;
+  flex-shrink: 0;
 }
 
 .contact__img-github:hover {
@@ -382,8 +391,10 @@ p + p {
 }
 
 .contact__img-tg {
+  display: block;
   fill: #039BE5;
   transition: all 0.5s ease-in;
+  flex-shrink: 0;
 }
 
 .contact__img-tg:hover {
@@ -421,7 +432,7 @@ p + p {
   margin-bottom: 5px;
 }
 
-.header__who {
+.header__text {
   color: #6B9DB9;
   line-height: 1.6;
 }
@@ -454,57 +465,54 @@ p + p {
   }
 }
 
-.who-i-am {
+.about-info {
   display: flex;
   column-gap: 30px;
   margin-bottom: 50px;
 }
 @media (max-width: 1229px) {
-  .who-i-am {
+  .about-info {
     margin-bottom: 40px;
   }
 }
 @media (max-width: 767px) {
-  .who-i-am {
+  .about-info {
     flex-direction: column;
   }
 }
 
-.who-i-am__title {
+.about-info__title {
   margin-bottom: 20px;
 }
 @media (max-width: 1229px) {
-  .who-i-am__title {
+  .about-info__title {
     font-size: 24px;
   }
 }
 
-.who-i-am p {
+.about-info p {
   line-height: 1.6;
 }
 
-.who-i-am__about-me {
+.about-info__about-me,
+.about-info__competencies {
   flex-basis: 0;
   flex-grow: 1;
   padding: 30px 30px 48px;
-  background-color: #FBFBFB;
 }
 @media (max-width: 1229px) {
-  .who-i-am__about-me {
+  .about-info__about-me,
+  .about-info__competencies {
     padding: 20px;
   }
 }
 
-.who-i-am__competencies {
-  flex-basis: 0;
-  flex-grow: 1;
-  padding: 30px 30px 48px;
-  background-color: #F1F8FB;
+.about-info__about-me {
+  background-color: #FBFBFB;
 }
-@media (max-width: 1229px) {
-  .who-i-am__competencies {
-    padding: 20px;
-  }
+
+.about-info__competencies {
+  background-color: #F1F8FB;
 }
 
 .technology {
@@ -519,41 +527,41 @@ p + p {
   text-transform: uppercase;
 }
 
-.who-i-am__technology-html {
+.about-info__technology-html {
   background-color: #414141;
 }
 
-.who-i-am__technology-css {
+.about-info__technology-css {
   background-color: #39A0FF;
 }
 
-.who-i-am__technology-scss {
+.about-info__technology-scss {
   background-color: #DD6ADF;
 }
 
-.who-i-am__technology-js {
+.about-info__technology-js {
   background-color: #FFCE20;
 }
 
-.who-i-am__list {
+.about-info__list {
   font-size: 14px;
   line-height: 1.3;
 }
 
-.who-i-am__list li {
+.about-info__list li {
   margin-bottom: 10px;
 }
 
-.who-i-am__list :last-child {
+.about-info__list :last-child {
   margin-bottom: 0;
 }
 
-.who-i-am__list-can {
+.about-info__list-can {
   position: relative;
   margin-left: 12px;
   line-height: 1.3;
 }
-.who-i-am__list-can::before {
+.about-info__list-can::before {
   content: "";
   width: 4px;
   height: 4px;
@@ -587,17 +595,23 @@ p + p {
   color: black !important;
 }
 
-.portfolio__project {
+.portfolio__projects {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
 
-.portfolio__the-project {
+.portfolio__project {
   width: 380px;
+  border: white 2px solid;
+  transition: border 0.2s ease-in;
+}
+.portfolio__project:hover {
+  content: "";
+  border: #6B9DB9 2px solid;
 }
 @media (max-width: 1229px) {
-  .portfolio__the-project {
+  .portfolio__project {
     width: 346px;
   }
 }

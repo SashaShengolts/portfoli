@@ -2,7 +2,7 @@
     margin-bottom: 50px;
 
     @include tablet () {
-            margin-bottom: 40px;
+        margin-bottom: 40px;
     }
 }
 
@@ -10,27 +10,40 @@
     margin-bottom: 30px;
 
     @include mobile () {
-            font-size: 24px;
+        font-size: 24px;
     }
 }
 
 .portfolio__link {
     text-decoration: none !important;
     color: black !important;
+    
+
 }
 
-.portfolio__project {
+.portfolio__projects {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.portfolio__the-project {
+.portfolio__project {
     width: 380px;
+    border: white 2px solid;
+    transition: border 0.2s ease-in;
+    
+        &:hover {
+            content: '';
+            border: #6B9DB9 2px solid;
+        }
 
     @include tablet () {
         width: 346px;
     }
+
+
+
+
 }
 
 .portfolio__the-project h3 {
@@ -41,7 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;    
+    margin-bottom: 15px;
     height: 210px;
     background-color: #F6F6F6;
 }
